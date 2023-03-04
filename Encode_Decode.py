@@ -47,7 +47,6 @@ def main ():
           if selection == 1:
                _secret_string = input('Please enter your password to encode: ')
                password_buff = encode(_secret_string)
-               print(password_buff)
                print('Your password has been encoded and stored!')
           elif selection == 2:
                decode()

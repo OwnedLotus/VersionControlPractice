@@ -17,11 +17,13 @@ def menu():
      _valid_input = False
      
      while not( _valid_input):
+          print()
           print('Menu')
           print('-------------')
           print('1. Encode')
           print('2. Decode')
           print('3. Quit')
+          print()
           
           _selection = input('Please enter an option: ')
 

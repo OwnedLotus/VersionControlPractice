@@ -4,16 +4,16 @@ codex = '3456789012'
 
 def encode(_input_string):
      #super secret encoding strategy
-     _return_list = []
+     _return_str = ''
      for char in _input_string:
-          _return_list.append(codex.index(char))
+          _return_str += str(codex.index(char))
           
-     return _return_list
+     return _return_str
 
 def decode():
      enc_string = ''
-    password = str(password)
-    for num in password:
+     password = str(password)
+     for num in password:
         num = int(num)
         password = int(password)
         if num >= 3:
@@ -24,7 +24,7 @@ def decode():
             enc_num = ((num + 10) - 3) # For numbers that would be negative
             enc_num = str(enc_num)
             enc_string += enc_num
-    return enc_string
+     return enc_string
 
 def menu():
      _valid_input = False

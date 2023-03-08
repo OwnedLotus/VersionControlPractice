@@ -65,6 +65,7 @@ def main ():
                print('Your password has been encoded and stored!')
           elif selection == 2:
                unencoded_pass = decode(password_buff)
+               print('The encoded password is {password_buff}, and the original password is {unencoded_pass}')
           elif selection == 3:
                quit()
           else:

@@ -11,8 +11,20 @@ def encode(_input_string):
      return _return_list
 
 def decode():
-     #TODO
-     pass
+     enc_string = ''
+    password = str(password)
+    for num in password:
+        num = int(num)
+        password = int(password)
+        if num >= 3:
+            enc_num = (num - 3)
+            enc_num = str(enc_num)
+            enc_string += enc_num
+        else:
+            enc_num = ((num + 10) - 3) # For numbers that would be negative
+            enc_num = str(enc_num)
+            enc_string += enc_num
+    return enc_string
 
 def menu():
      _valid_input = False

@@ -10,7 +10,7 @@ def encode(_input_string):
           
      return _return_str
 
-def decode():
+def decode(password):
      enc_string = ''
      password = str(password)
      for num in password:
@@ -54,7 +54,7 @@ def menu():
 
 
 def main ():
-     password_buff = []
+     password_buff = ''
      
      while True:
           selection = menu()
@@ -64,7 +64,7 @@ def main ():
                password_buff = encode(_secret_string)
                print('Your password has been encoded and stored!')
           elif selection == 2:
-               decode()
+               unencoded_pass = decode(password_buff)
           elif selection == 3:
                quit()
           else:
